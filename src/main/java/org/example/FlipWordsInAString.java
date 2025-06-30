@@ -17,7 +17,7 @@ public class FlipWordsInAString {
         for (int i = words.length - 1; i >= 0; i--) {
             result.append(words[i]);
             if (i != 0) {
-                result.append(" ");
+                result.append(" "); //To ensure spaces are betwwen only words not before the first one
             }
         }
 
