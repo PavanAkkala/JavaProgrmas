@@ -3,23 +3,26 @@ package org.example;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Duplicates1 {
 
-
     public static void main(String[] args) {
 
+        String str = "Don Reddy";
 
+        String res = flip(str);
+
+        System.out.println(res);
     }
 
-    public static String isFlip(String input) {
+    public static String flip(String input) {
 
-        String[] words = input.split("\\s+");
+        String[] words = input.trim().split("\\s+");
 
         StringBuilder result = new StringBuilder();
-
-        for(int i=words.length-1; i>=0; i--) {
+        for (int i=words.length-1;i>=0; i--) {
 
             result.append(words[i]);
 
@@ -30,10 +33,6 @@ public class Duplicates1 {
         }
 
         return result.toString();
-
-
-
-   }
-
+    }
 
 }

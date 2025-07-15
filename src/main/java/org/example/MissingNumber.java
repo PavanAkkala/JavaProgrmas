@@ -16,7 +16,7 @@ public class MissingNumber {
     }
 
     public static void main(String[] args) {
-        int[] num = {1, 3, 4, 5};  // Missing 2
+        int[] num = {1, 2, 3, 4,6};  // Missing 2
         int missing = missingNumber(num);
         System.out.println("Missing number is: " + missing);
 
